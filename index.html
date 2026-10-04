@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5ed">
+  <meta name="description" content="Meet Greenden: thoughtfully grown houseplants and everything you need to help them thrive.">
+  <title>Greenden — A little more green</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { forest: '#1d3b2a', moss: '#607b51', leaf: '#b9cf87', paper: '#f6f5ed', ink: '#20261f' }, fontFamily: { sans: ['DM Sans', 'sans-serif'], display: ['Playfair Display', 'serif'] } } } };</script>
+</head>
+<body class="bg-paper font-sans text-ink">
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="wordmark" href="index.html" aria-label="Greenden home">green<span>den</span><i>.</i></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-links" aria-label="Open navigation"><span></span><span></span></button>
+      <div class="nav-links" id="primary-links">
+        <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+        <a class="nav-link" href="products.html">Plants &amp; pots</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-shop" href="products.html">Find your plant <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> A slower kind of growing</p>
+        <h1>A little more<br><em>green</em> in your day.</h1>
+        <p class="hero-intro">Good plants, good people, and a softer place to land. Find a leafy friend that feels right at home with you.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="products.html">Shop the collection <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#our-way">Get to know us <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-note"><span class="note-mark">✳</span><span><strong>Grown with a little extra care</strong><small>Rooted locally. Ready for your home.</small></span></div>
+      </div>
+      <div class="hero-art">
+        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1400&q=85" alt="Sunlit room filled with thriving houseplants">
+        <div class="hero-stamp"><span>GOOD THINGS</span><strong>grow<br>here</strong><span>EST. WITH CARE</span></div>
+        <p class="image-caption">A home can always use one more plant.</p>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Our promise"><div class="ticker-track"><span>Rooted in good things</span><b>✳</b><span>Picked with care</span><b>✳</b><span>Made for real homes</span><b>✳</b><span>Rooted in good things</span><b>✳</b><span>Picked with care</span></div></section>
+
+    <section class="section-shell featured-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">A few leafy favourites</p><h2>Good things,<br class="mobile-break"> growing.</h2></div>
+        <a class="text-link" href="products.html">Browse all plants <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="product-grid home-product-grid grid grid-cols-2 sm:gap-x-4 md:grid-cols-3 lg:gap-x-6">
+        <article class="product-card">
+          <a class="product-image" href="products.html" aria-label="Browse Monstera plants"><img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=760&q=80" alt="Lush green monstera plant in a pot"><span class="product-tag">Easy does it</span></a>
+          <div class="product-details"><div><h3>Monstera Deliciosa</h3><p>The one that makes a room.</p></div><span class="price">$38</span></div>
+        </article>
+        <article class="product-card">
+          <a class="product-image" href="products.html" aria-label="Browse Pilea plants"><img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=760&q=80" alt="Small leafy pilea plant on a bright shelf"><span class="product-tag">Sunny spot</span></a>
+          <div class="product-details"><div><h3>Chinese Money Plant</h3><p>A little round of happy.</p></div><span class="price">$24</span></div>
+        </article>
+        <article class="product-card">
+          <a class="product-image" href="products.html" aria-label="Browse snake plants"><img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=760&q=80" alt="Architectural snake plant with tall upright leaves"><span class="product-tag">Low fuss</span></a>
+          <div class="product-details"><div><h3>Snake Plant</h3><p>Thrives on doing its own thing.</p></div><span class="price">$32</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="story-section" id="our-way">
+      <div class="story-image"><img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1200&q=85" alt="Carefully tended rows of young plants in a greenhouse"></div>
+      <div class="story-copy"><p class="eyebrow">A good place to grow</p><h2>Plants for people,<br><em>not just plant people.</em></h2><p>We believe a little green goes a long way. So we find friendly, easy-to-love plants and send them off with honest advice and a little hope.</p><a class="button button-light" href="contact.html">Come say hello <span aria-hidden="true">↗</span></a><span class="story-scribble" aria-hidden="true">grow at<br>your pace</span></div>
+    </section>
+
+    <section class="section-shell care-strip">
+      <div><span class="care-number">01</span><h3>Picked for real life</h3><p>Thoughtful plants for bright windows, busy weeks, and first-time growers.</p></div>
+      <div><span class="care-number">02</span><h3>Care that makes sense</h3><p>Clear advice, no gatekeeping. We'll help you find your plant-owning rhythm.</p></div>
+      <div><span class="care-number">03</span><h3>Better by nature</h3><p>Less waste in every box and good growing practices from root to leaf.</p></div>
+    </section>
+
+    <section class="newsletter-band"><div><p class="eyebrow">Notes from the greenhouse</p><h2>A little green in your inbox.</h2><p>Plant care, new arrivals, and the occasional reminder to water.</p></div><a class="button button-dark" href="contact.html">Let's keep in touch <span aria-hidden="true">↗</span></a></section>
+  </main>
+
+  <footer class="site-footer"><a class="wordmark footer-mark" href="index.html">green<span>den</span><i>.</i></a><p>Rooted in good things. © <span data-year></span> Greenden.</p><div><a href="products.html">Shop plants</a><a href="contact.html">Get in touch</a></div></footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

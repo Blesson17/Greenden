@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5ed">
+  <meta name="description" content="Find a plant you'll love. Browse houseplants and thoughtful pots from Greenden.">
+  <title>Plants &amp; pots — Greenden</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { forest: '#1d3b2a', moss: '#607b51', leaf: '#b9cf87', paper: '#f6f5ed', ink: '#20261f' }, fontFamily: { sans: ['DM Sans', 'sans-serif'], display: ['Playfair Display', 'serif'] } } } };</script>
+</head>
+<body class="bg-paper font-sans text-ink">
+  <header class="site-header"><nav class="nav-shell" aria-label="Main navigation">
+    <a class="wordmark" href="index.html" aria-label="Greenden home">green<span>den</span><i>.</i></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-links" aria-label="Open navigation"><span></span><span></span></button>
+    <div class="nav-links" id="primary-links"><a class="nav-link" href="index.html">Home</a><a class="nav-link active" href="products.html" aria-current="page">Plants &amp; pots</a><a class="nav-link" href="contact.html">Contact</a><a class="nav-shop" href="contact.html">Need a hand? <span aria-hidden="true">↗</span></a></div>
+  </nav></header>
+  <main>
+    <section class="collection-intro"><p class="eyebrow"><span class="eyebrow-line"></span> The good-growing collection</p><h1>Find your kind<br>of <em>green.</em></h1><p>Some like the sun. Some like to be left alone. There's a plant for the way you live.</p><span class="collection-count"><strong>06</strong> good things to grow</span></section>
+    <section class="collection-section" aria-label="Plant collection">
+      <div class="collection-toolbar">
+        <div class="filter-list" role="group" aria-label="Filter products"><button class="filter-button selected" type="button" data-filter="all" aria-pressed="true">Everything <span>06</span></button><button class="filter-button" type="button" data-filter="easy" aria-pressed="false">Easy care</button><button class="filter-button" type="button" data-filter="sunny" aria-pressed="false">Sun lovers</button><button class="filter-button" type="button" data-filter="pots" aria-pressed="false">Pots</button></div>
+        <label class="search-field"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only">Search the collection</span><input type="search" id="product-search" placeholder="Find a plant" autocomplete="off"></label>
+      </div>
+      <p class="filter-status" id="filter-status" aria-live="polite">Showing 6 of 6 pieces</p>
+      <div class="product-grid collection-grid grid grid-cols-2 sm:gap-x-4 md:grid-cols-3 lg:gap-x-6" id="product-grid">
+        <article class="product-card" data-category="easy" data-name="monstera deliciosa">
+          <a class="product-image" href="contact.html" aria-label="Ask us about Monstera Deliciosa"><img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=760&q=80" alt="Lush green monstera plant in a pot"><span class="product-tag">Easy does it</span></a><div class="product-details"><div><h2>Monstera Deliciosa</h2><p>The one that makes a room.</p></div><span class="price">$38</span></div>
+        </article>
+        <article class="product-card" data-category="sunny" data-name="chinese money plant pilea">
+          <a class="product-image" href="contact.html" aria-label="Ask us about the Chinese Money Plant"><img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=760&q=80" alt="Small leafy pilea plant on a bright shelf"><span class="product-tag">Sunny spot</span></a><div class="product-details"><div><h2>Chinese Money Plant</h2><p>A little round of happy.</p></div><span class="price">$24</span></div>
+        </article>
+        <article class="product-card" data-category="easy" data-name="snake plant sansevieria">
+          <a class="product-image" href="contact.html" aria-label="Ask us about the Snake Plant"><img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=760&q=80" alt="Architectural snake plant with tall upright leaves"><span class="product-tag">Low fuss</span></a><div class="product-details"><div><h2>Snake Plant</h2><p>Thrives on doing its own thing.</p></div><span class="price">$32</span></div>
+        </article>
+        <article class="product-card" data-category="sunny" data-name="rubber plant ficus elastica">
+          <a class="product-image" href="contact.html" aria-label="Ask us about the Rubber Plant"><img src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=760&q=80" alt="Glossy broad-leafed rubber plant in a ceramic planter"><span class="product-tag">Loves the light</span></a><div class="product-details"><div><h2>Rubber Plant</h2><p>Big leaves, easy company.</p></div><span class="price">$42</span></div>
+        </article>
+        <article class="product-card" data-category="easy" data-name="zz plant zamioculcas">
+          <a class="product-image" href="contact.html" aria-label="Ask us about the ZZ Plant"><img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=760&q=80" alt="Shiny upright ZZ plant in a simple pot"><span class="product-tag">Very forgiving</span></a><div class="product-details"><div><h2>ZZ Plant</h2><p>Unbothered, in the best way.</p></div><span class="price">$29</span></div>
+        </article>
+        <article class="product-card" data-category="pots" data-name="terracotta pot clay planter">
+          <a class="product-image" href="contact.html" aria-label="Ask us about the Sunday Terracotta Pot"><img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=760&q=80" alt="Potted green plant in a warm terracotta planter"><span class="product-tag">Hand-finished</span></a><div class="product-details"><div><h2>Sunday Terracotta Pot</h2><p>A good home for growing things.</p></div><span class="price">$18</span></div>
+        </article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>No plants found just yet. Try another name or filter.</p>
+    </section>
+    <section class="collection-note"><span class="note-mark">✳</span><p>Not sure what will feel at home? <a href="contact.html">Tell us about your space <span aria-hidden="true">↗</span></a></p></section>
+  </main>
+  <footer class="site-footer"><a class="wordmark footer-mark" href="index.html">green<span>den</span><i>.</i></a><p>Rooted in good things. © <span data-year></span> Greenden.</p><div><a href="index.html">Our story</a><a href="contact.html">Get in touch</a></div></footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

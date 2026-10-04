@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5ed">
+  <meta name="description" content="A question about plants, pots, or where to begin? The friendly Greenden team is here to help.">
+  <title>Say hello — Greenden</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { forest: '#1d3b2a', moss: '#607b51', leaf: '#b9cf87', paper: '#f6f5ed', ink: '#20261f' }, fontFamily: { sans: ['DM Sans', 'sans-serif'], display: ['Playfair Display', 'serif'] } } } };</script>
+</head>
+<body class="bg-paper font-sans text-ink">
+  <header class="site-header"><nav class="nav-shell" aria-label="Main navigation">
+    <a class="wordmark" href="index.html" aria-label="Greenden home">green<span>den</span><i>.</i></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-links" aria-label="Open navigation"><span></span><span></span></button>
+    <div class="nav-links" id="primary-links"><a class="nav-link" href="index.html">Home</a><a class="nav-link" href="products.html">Plants &amp; pots</a><a class="nav-link active" href="contact.html" aria-current="page">Contact</a><a class="nav-shop" href="products.html">Find your plant <span aria-hidden="true">↗</span></a></div>
+  </nav></header>
+  <main>
+    <section class="contact-hero"><div><p class="eyebrow"><span class="eyebrow-line"></span> Questions welcome</p><h1>Let's talk<br><em>plants.</em></h1><p>Big question, little question, or just not sure where to start? We're all ears.</p><a class="contact-email" href="mailto:hello@greenden.example">hello@greenden.example <span aria-hidden="true">↗</span></a></div><div class="contact-photo"><img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1000&q=85" alt="Bright, plant-filled corner to settle into"></div></section>
+    <section class="contact-layout">
+      <div class="contact-details"><p class="eyebrow">A real person, right here</p><h2>We'll help you<br>feel at home.</h2><p class="contact-description">Tell us what you're looking for, what your window gets, or what happened to your last plant. We'll meet you where you are.</p>
+        <div class="detail-row"><span class="detail-index">01</span><div><h3>Write us a note</h3><a href="mailto:hello@greenden.example">hello@greenden.example</a></div></div>
+        <div class="detail-row"><span class="detail-index">02</span><div><h3>Find us in the garden</h3><p>18 Greenhouse Lane<br>Portland, OR 97209</p></div></div>
+        <div class="detail-row"><span class="detail-index">03</span><div><h3>We're around</h3><p>Monday – Friday, 9am–5pm<br>Saturday, 10am–3pm</p></div></div>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <p class="eyebrow">Send a little note</p><h2>What's on your mind?</h2>
+        <div class="form-row"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" placeholder="How should we say hello?" required></div>
+        <div class="form-row"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
+        <div class="form-row"><label for="topic">What can we help with?</label><select id="topic" name="topic" required><option value="" disabled selected>Pick a little something</option><option>Finding the right plant</option><option>Plant care advice</option><option>An order or delivery</option><option>Something else</option></select></div>
+        <div class="form-row"><label for="message">Your note</label><textarea id="message" name="message" rows="4" placeholder="Tell us a little more..." required></textarea></div>
+        <button class="button button-dark form-submit" type="submit">Send your note <span aria-hidden="true">↗</span></button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="wordmark footer-mark" href="index.html">green<span>den</span><i>.</i></a><p>Rooted in good things. © <span data-year></span> Greenden.</p><div><a href="index.html">Our story</a><a href="products.html">Shop plants</a></div></footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
